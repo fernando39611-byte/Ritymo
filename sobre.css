@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(13, 3, 48);;
+}
+
+
+header {
+    background-color: rgb(13, 3, 48);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+h1- {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+}
+.logo-area img {
+    width: 240px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.menu {
+    display: flex;
+    gap: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.menu a {
+    position: relative;
+    text-decoration: none;
+}
+
+/* Linha animada */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 3px;
+    background-color:deeppink;
+
+    transition: width 0.3s ease;
+}
+
+/* Quando passar o mouse */
+.menu a:hover::after {
+    width: 100%;
+}
+.botoes-login {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.botao-conta,
+.botao-entrar {
+    width: 150px;
+    height: 48px;
+    box-sizing: border-box;
+
+    margin: 0;
+    background-color: rgb(4, 199, 253);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.botao-conta:hover,
+.botao-entrar:hover {
+    background-color: rgb(110, 4, 250);
+    box-shadow: 0 0 15px #00C4F7;
+    transform: translateY(-3px);
+}
+.conteudo-sobre {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: flex;
+    padding: 10px 20px;
+}
+.conteudo-sobre h1 {
+    color: white;
+    font-size: 52px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+.conteudo-sobre h3 {
+    color: white;
+    font-size: 34px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2px;
+    align-items: center;
+}
+.conteudo-sobre span {
+    color: deeppink;
+}
+.rodape {
+    background-color: rgb(13, 3, 48);
+    color: white;
+    font-size: larger;
+    margin-top: 150px;
+    font-size: 15px;
+}

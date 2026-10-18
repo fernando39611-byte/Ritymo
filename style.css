@@ -1,0 +1,181 @@
+body {
+    background-color: rgb(13, 3, 48);;
+}
+header {
+    background-color: rgb(13, 3, 48);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+h1- {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+}
+.logo-area img {
+    width: 240px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.menu a {
+    position: relative;
+    text-decoration: none;
+}
+
+/* Linha animada */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 3px;
+    background-color:deeppink;
+
+    transition: width 0.3s ease;
+}
+
+/* Quando passar o mouse */
+.menu a:hover::after {
+    width: 100%;
+}
+.botoes-login {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.botao-conta,
+.botao-entrar {
+    width: 150px;
+    height: 48px;
+    box-sizing: border-box;
+
+    margin: 0;
+    background-color: rgb(4, 199, 253);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botao-conta:hover,
+.botao-entrar:hover {
+    background-color: rgb(110, 4, 250);
+    box-shadow: 0 0 15px #00C4F7;
+    transform: translateY(-3px);
+}
+.main {
+    background-color: rgb(13, 3, 48);;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.hero-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 40px;
+}
+.subtitulo {
+    font-size: 20px;
+    color:white;
+    margin-bottom: 5px;
+}
+.titulo {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 55px;
+   font-weight: 800;
+   line-height: 1.15;
+   color: white;
+   letter-spacing: -3px;
+   margin-top: 10px;
+}
+
+.titulo span {
+    color:  rgb(4, 199, 253);
+}
+.hero-imagem {
+    position: absolute;
+    right: 110px;
+    top: 140px;
+    width: 35%;
+    z-index: 1;
+}
+
+.hero-imagem img {
+    width: 105%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+    filter: brightness(0) invert(1);
+
+}
+
+.hero-imagem img:hover {
+    filter: brightness(0) saturate(100%)
+            invert(15%) sepia(100%)
+            saturate(500%) hue-rotate(265deg);
+}
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.botao-criar,
+.botao-studio {
+    background-color: deeppink;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 16px 20px;
+    font-size: 32px;
+    cursor: pointer;
+    width: auto;
+    box-shadow: 0 0 12px deeppink;
+    margin-top: 10px;
+    margin-left:20px ;
+    white-space: nowrap;
+}
+.botao-criar:hover,
+.botao-studio:hover {
+    background-color: rgb(110, 4, 250);
+    box-shadow: 0 0 15px #00C4F7;
+    transform: translateY(-3px);
+}
+.rodape {
+    background-color: rgb(13, 3, 48);
+    color: white;
+    font-size: larger;
+    margin-top: 150px;
+    font-size: 15px;
+}
